@@ -5,7 +5,7 @@ PORT = 1027        # The port used by the server
 BUFFER_SIZE = 256
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    message = b'hello ATU'
+    message = b'HELLO ATU'
     message_length = len(message)
     s.connect((HOST, PORT))
     s.sendall(message)
